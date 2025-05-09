@@ -1,12 +1,10 @@
-# **Project REST**
+# **TableTrack**
 _A Data-Driven Review Analysis Tool for the Restaurant & Hospitality Industry_
 
-![Project REST Logo](media/image3.png)
+![TableTrackLogo](frontend/public/logowtext.png)
 
 ## **📌 Overview**
-Project REST is a **full-stack tool** that aggregates, analyzes, and visualizes customer reviews from multiple platforms. Using **web scraping and NLP**, it provides restaurant owners with actionable insights to improve their business.
-
-#### Note changes to the Project Rest.docx locally wont sync, if you would like to make any edits please use 'box' so changes are saved. The document that lives here is a reflection and is updated weekly, some changes might not show up.
+TableTrack is a **full-stack tool** that aggregates, analyzes, and visualizes customer reviews from multiple platforms. Using **web scraping, NLP, and LLMs**, it provides restaurant owners with actionable insights to improve their business.
 
 ## **🛠 Features**
 ✅ **Automated Sentiment Analysis** – Understand customer feedback in real time.  
@@ -18,17 +16,17 @@ Project REST is a **full-stack tool** that aggregates, analyzes, and visualizes 
 | **Component**       | **Technology** |
 |---------------------|---------------|
 | **Backend**        | Python (Flask/Django) |
-| **AI**             | tbd |
-| **Web Scraping**   | tbd |
-| **Database**       |  SQL |
-| **Frontend**       | React.js / Next.js |
-| **Deployment**     | tbd |
+| **AI**             | Google Cloud Natural Language API, Deepseek V3 |
+| **Web Scraping**   | Selenium |
+| **Database**       | SQL |
+| **Frontend**       | React.js |
+| **Deployment**     | TBD |
 
 ## **📅 Project Roadmap**
-- **Phase 1:** Research & Data Collection (🔄 In Progress)
-- **Phase 2:** Web Scraping & API Integration (⏳)
-- **Phase 3:** Sentiment Analysis Model (⏳)
-- **Phase 4:** Dashboard Development & Deployment (⏳)
+- **Phase 1:** Research & Data Collection (✅ Completed)
+- **Phase 2:** Web Scraping & API Integration (✅ Completed)
+- **Phase 3:** Sentiment Analysis Model (✅ Completed)
+- **Phase 4:** Dashboard Development & Deployment (🔄 In Progress)
 
 ## **🛠 Installation & Setup**
 ### **1️⃣ Clone the Repository**
@@ -43,3 +41,4 @@ cd Project-REST
 |----------------|--------|---------------|
 | Ahmed Abdulla  | aaa384 | @ahmed-52 |
 | Farhan Mashrur | fm454  | @fm454|
+| Arsh Singh     | as4274 | @Arsh-S|
