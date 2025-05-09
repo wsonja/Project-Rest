@@ -32,6 +32,7 @@ google-api-core==2.24.1
 google-auth==2.38.0
 google-cloud-language==2.17.0
 googleapis-common-protos==1.69.0
+googlemaps==4.10.0
 grpcio==1.71.0rc2
 grpcio-status==1.71.0rc2
 h11==0.14.0
@@ -59,7 +60,7 @@ packaging==24.2
 pandas==2.2.3
 pillow==11.1.0
 preshed==3.0.9
--e git+https://github.com/Cornell-Data-Strategy/Project-Rest.git@29d3368f088e6b14d27c5e5efc7cc544709cbf5a#egg=Project_Rest
+-e git+ssh://git@github.com/Cornell-Data-Strategy/Project-Rest.git@e99f8c7421c86656d64a09bc9d00b7e8802e8d38#egg=Project_Rest
 proto-plus==1.26.0
 protobuf==5.29.3
 pyarrow==19.0.1
