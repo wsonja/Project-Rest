@@ -3,6 +3,8 @@ _A Data-Driven Review Analysis Tool for the Restaurant & Hospitality Industry_
 
 ![TableTrackLogo](frontend/public/logowtext.png)
 
+https://github.com/user-attachments/assets/05facea7-2acd-4e3e-b57f-9bf70fa7fb23
+
 ## **📌 Overview**
 TableTrack is a **full-stack tool** that aggregates, analyzes, and visualizes customer reviews from multiple platforms. Using **web scraping, NLP, and LLMs**, it provides restaurant owners with actionable insights to improve their business.
 
