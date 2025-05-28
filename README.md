@@ -1,7 +1,11 @@
-# **TableTalk**
-*A Full-Stack B2B SaaS Platform for Restaurant Review Intelligence*
+# **TableTalk**             
+*A Full-Stack B2B SaaS Platform for Restaurant Review Intelligence*  
 
-![TableTalkLogo](https://github.com/user-attachments/assets/05facea7-2acd-4e3e-b57f-9bf70fa7fb23)
+<div align="center" style="background-color: white;">
+  <img src="frontend/public/logowtext.png" alt="TableTrackLogo"/>
+  <img src="https://github.com/user-attachments/assets/05facea7-2acd-4e3e-b57f-9bf70fa7fb23" alt="TableTalkLogo" width="800"/>
+</div>
+
 
 ## **📌 Overview**
 TableTalk is a **comprehensive B2B SaaS solution** that transforms scattered customer reviews into actionable business intelligence for restaurant owners. By leveraging **AI-powered analysis, automated web scraping, and intelligent dashboards**, TableTrack helps restaurants understand customer feedback, identify improvement opportunities, and make data-driven decisions to enhance their business performance.
@@ -89,48 +93,6 @@ TableTalk solves these challenges by providing:
 - **Phase 5:** Beta Testing & User Feedback (🔜 **Upcoming**)
 - **Phase 6:** Production Deployment & Launch (🔜 **Upcoming**)
 
-## **🚀 Getting Started**
-
-### **Prerequisites**
-- Node.js (v16+)
-- Python (3.8+)
-- PostgreSQL/MySQL
-- Google Cloud API credentials
-- OpenRouter API key
-
-### **Installation**
-
-#### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/yourusername/TableTalk.git
-cd TableTalk
-```
-
-#### **2️⃣ Backend Setup**
-```bash
-cd backend
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-```
-
-#### **3️⃣ Frontend Setup**
-```bash
-cd frontend
-npm install
-npm start
-```
-
-#### **4️⃣ Environment Configuration**
-```bash
-# Create .env file with required API keys
-GOOGLE_CLOUD_API_KEY=your_google_cloud_api_key
-OPENROUTER_API_KEY=your_openrouter_api_key
-DATABASE_URL=your_database_url
-SECRET_KEY=your_secret_key
-JWT_SECRET_KEY=your_jwt_secret_key
-```
-
 ## **📊 Key Metrics & Performance**
 - **Automated review scraping** from Google Maps using Selenium
 - **Real-time sentiment analysis** with Google Cloud NLP
@@ -157,15 +119,11 @@ JWT_SECRET_KEY=your_jwt_secret_key
 | **Arsh Singh**      | Frontend Developer    | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
 
 ## **📄 License**
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## **🤝 Contributing**
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+**All Rights Reserved** - This code is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the authors.
 
 ## **📞 Contact & Support**
-- **Email:** support@tabletrack.com
-- **Documentation:** [docs.tabletrack.com](https://docs.tabletrack.com)
-- **Issues:** [GitHub Issues](https://github.com/yourusername/TableTalk/issues)
+- **Email:** support@tabletalk.com
+- **Documentation:** [docs.tabletalk.com](https://docs.tabletalk.com)
 
 ---
 *Built with ❤️ for the restaurant industry*
