@@ -24,31 +24,70 @@ TableTalk solves these challenges by providing:
 - **Real-time performance dashboards** with comprehensive analytics
 - **Actionable AI insights** generated using advanced language models
 
-## **🛠 Key Features**
+## Features
 
-### **Core Analytics**
-✅ **Smart Review Classification** – Automatically categorize reviews by sentiment and topics  
-✅ **AI-Powered Sentiment Analysis** – Real-time customer satisfaction tracking using Google Cloud NLP  
-✅ **Multi-Platform Aggregation** – Automated scraping from Google Maps with Selenium  
-✅ **Entity Extraction** – Identify key topics, menu items, and business aspects  
+### Core Analytics
+- **Smart Review Classification**: Categorize reviews by sentiment and topic  
+- **AI-Powered Sentiment Analysis**: Track customer satisfaction with Google Cloud NLP  
+- **Multi-Platform Aggregation**: Scrape Google Maps using Selenium  
+- **Entity Extraction**: Identify key topics, menu items, and business aspects  
 
-### **Dashboard & Visualization**
-✅ **Comprehensive Analytics Dashboard** – Visualize all reviews in one centralized platform  
-✅ **Performance Metrics Tracking** – Monitor rating trends, review volume, and sentiment over time  
-✅ **Review Segmentation** – Categorize reviews into segments (Highly Positive, Critical, Suggestions)  
-✅ **Custom Reporting** – Generate detailed reports for any time period  
+### Dashboard & Visualization
+- **Analytics Dashboard**: Centralized view of all reviews  
+- **Performance Metrics Tracking**: Monitor rating trends, review volume, and sentiment over time  
+- **Review Segmentation**: Segment reviews into Highly Positive, Critical, and Suggestions  
 
-### **Business Intelligence**
-✅ **AI-Generated Insights** – Automated business recommendations using DeepSeek LLM  
-✅ **Topic-Based Ratings** – Track performance across specific business aspects  
-✅ **Critical Review Detection** – Identify and prioritize negative feedback  
-✅ **Rating Distribution Analysis** – Understand customer satisfaction patterns  
 
-### **User Management**
-✅ **JWT Authentication** – Secure user registration and login system  
-✅ **Multi-Business Support** – Manage multiple restaurant locations per user  
-✅ **Profile Management** – Update user information and business details  
-✅ **Account Security** – Password change and account deletion features  
+### Business Intelligence
+- **AI-Generated Insights**: Business recommendations powered by DeepSeek LLM  
+- **Topic-Based Ratings**: Track performance across specific aspects of the business  
+- **Critical Review Detection**: Highlight and prioritize negative feedback  
+ 
+
+
+## **🏗 System Architecture**
+
+```
+┌─────────────────────┐    JWT Auth     ┌─────────────────────┐    API Calls    ┌─────────────────────┐
+│      Frontend       │    + REST API   │     Backend API     │                 │    External APIs    │
+│   React.js +        │◄───────────────►│   Flask +           │◄───────────────►│                     │
+│   Tailwind CSS      │                 │   SQLAlchemy        │                 │  ┌───────────────┐  │
+│                     │                 │                     │                 │  │ Google Cloud  │  │
+│ ┌─────────────────┐ │                 │ ┌─────────────────┐ │                 │  │ NLP API       │  │
+│ │ Dashboard UI    │ │                 │ │ Auth Service    │ │                 │  │ • Sentiment   │  │
+│ │ Analytics       │ │                 │ │ Business Logic  │ │                 │  │ • Entities    │  │
+│ │ Review Mgmt     │ │                 │ │ Dashboard APIs  │ │                 │  └───────────────┘  │
+│ └─────────────────┘ │                 │ └─────────────────┘ │                 │                     │
+└─────────────────────┘                 └─────────────────────┘                 │  ┌───────────────┐  │
+                                                   │                             │  │ OpenRouter    │  │
+                                                   │                             │  │ (DeepSeek V3) │  │
+                                                   │                             │  │ • AI Insights │  │
+                                                   │                             │  │ • Summary     │  │
+                                                   ▼                             │  └───────────────┘  │
+                                        ┌─────────────────────┐                 └─────────────────────┘
+                                        │   Data Processing   │                            │
+                                        │     Pipeline        │                            │
+                                        └─────────────────────┘                            │
+                                                   │                                       │
+                                                   ▼                                       │
+┌─────────────────────┐    Web Scraping ┌─────────────────────┐    Raw Data    ┌─────────────────────┐
+│     Data Sources    │◄────────────────│   Scraping Layer   │───────────────►│    Database Layer   │
+│                     │                 │                     │                 │                     │
+│ ┌─────────────────┐ │                 │ ┌─────────────────┐ │                 │ ┌─────────────────┐ │
+│ │ Google Maps     │ │                 │ │ Selenium        │ │                 │ │ PostgreSQL/     │ │
+│ │ Review Pages    │ │                 │ │ WebDriver       │ │                 │ │ MySQL           │ │
+│ │                 │ │                 │ │ • Rate Limiting │ │                 │ │                 │ │
+│ └─────────────────┘ │                 │ │ • Smart Parsing │ │                 │ │ ┌─────────────┐ │ │
+│                     │                 │ └─────────────────┘ │                 │ │ │   Tables    │ │ │
+│ ┌─────────────────┐ │                 │                     │                 │ │ │ • Users     │ │ │
+│ │ Other Review    │ │                 │ ┌─────────────────┐ │                 │ │ │ • Business  │ │ │
+│ │ Platforms       │ │                 │ │ BeautifulSoup   │ │                 │ │ │ • Reviews   │ │ │
+│ │ (Future)        │ │                 │ │ • HTML Parsing  │ │                 │ │ │ • Insights  │ │ │
+│ └─────────────────┘ │                 │ │ • Data Cleaning │ │                 │ │ └─────────────┘ │ │
+└─────────────────────┘                 │ └─────────────────┘ │                 │ └─────────────────┘ │
+                                        └─────────────────────┘                 └─────────────────────┘
+```
+
 
 ## **📐 Tech Stack**
 
@@ -63,26 +102,6 @@ TableTalk solves these challenges by providing:
 | **API Integration** | OpenRouter API |
 | **Deployment**      | TBD (AWS/Google Cloud Platform) |
 
-## **🏗 System Architecture**
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   React.js      │    │   Flask API      │    │   Google Cloud  │
-│   Dashboard     │◄──►│   Server         │◄──►│   NLP API       │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌──────────────────┐
-                       │   Selenium       │
-                       │   Web Scraper    │
-                       └──────────────────┘
-                                │
-                                ▼
-                       ┌──────────────────┐
-                       │   PostgreSQL     │
-                       │   Database       │
-                       └──────────────────┘
-```
 
 ## **📅 Development Roadmap**
 
@@ -112,22 +131,19 @@ TableTalk solves these challenges by providing:
 
 ## **👥 Team**
 
-| **Name**            | **Role**              | **NetID** | **GitHub**    |
-|--------------------|-----------------------|-----------|---------------|
-| **Ahmed Abdulla**   | Team Lead  | aaa384    | [@ahmed-52](https://github.com/ahmed-52) |
-| **Farhan Mashrur**  | Team Lead  | fm454     | [@fm454](https://github.com/farhan-439) |
-| **Arsh Singh**      | Developer  | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
-| **Saesha Agarwal**  | Developer  | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
-| **Sonja Wong**      | Developer  | as4274    | [@Arsh-S](https://github.com/wsonja) |
-| **Daniel Khanin**   | Developer  | as4274    | [@Arsh-S](https://github.com/saeshaagarwal) |
-| **Arianna Hsu**     | Developer  | as4274    |  |
+| **Name**            | **Role**             |  **GitHub**    |
+|--------------------|-----------------------|---------------|
+| **Ahmed Abdulla**   | Team Lead  | [@ahmed-52](https://github.com/ahmed-52) |
+| **Farhan Mashrur**  | Team Lead  | [@farhan-439](https://github.com/farhan-439) |
+| **Arsh Singh**      | Developer  | [@Arsh-S](https://github.com/Arsh-S) |
+| **Saesha Agarwal**  | Developer  | [@saeshaagarwal](https://github.com/saeshaagarwal) |
+| **Sonja Wong**      | Developer  | [@wsonja](https://github.com/wsonja) |
+| **Daniel Khanin**   | Developer  | [@Danikk-392](https://github.com/Danikk392) |
+| **Arianna Hsu**     | Developer  |  |
 
 ## **📄 License**
 **All Rights Reserved** - This code is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the authors.
 
-## **📞 Contact & Support**
-- **Email:** support@tabletalk.com
-- **Documentation:** [docs.tabletalk.com](https://docs.tabletalk.com)
 
 ---
-*Built with ❤️ for the restaurant industry*
+*Built as a project by Cornell Data Strategy*
