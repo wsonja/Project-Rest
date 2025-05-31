@@ -114,9 +114,13 @@ TableTalk solves these challenges by providing:
 
 | **Name**            | **Role**              | **NetID** | **GitHub**    |
 |--------------------|-----------------------|-----------|---------------|
-| **Ahmed Abdulla**   | Full-Stack Developer  | aaa384    | [@ahmed-52](https://github.com/ahmed-52) |
-| **Farhan Mashrur**  | Backend & AI Engineer | fm454     | [@fm454](https://github.com/fm454) |
-| **Arsh Singh**      | Frontend Developer    | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
+| **Ahmed Abdulla**   | Team Lead  | aaa384    | [@ahmed-52](https://github.com/ahmed-52) |
+| **Farhan Mashrur**  | Team Lead  | fm454     | [@fm454](https://github.com/farhan-439) |
+| **Arsh Singh**      | Developer  | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
+| **Saesha Agarwal**  | Developer  | as4274    | [@Arsh-S](https://github.com/Arsh-S) |
+| **Sonja Wong**      | Developer  | as4274    | [@Arsh-S](https://github.com/wsonja) |
+| **Daniel Khanin**   | Developer  | as4274    | [@Arsh-S](https://github.com/saeshaagarwal) |
+| **Arianna Hsu**     | Developer  | as4274    |  |
 
 ## **📄 License**
 **All Rights Reserved** - This code is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the authors.
