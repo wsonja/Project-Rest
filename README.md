@@ -1,9 +1,11 @@
 # **TableTalk**             
 *A Full-Stack B2B SaaS Platform for Restaurant Review Intelligence*  
 
-<div align="center" style="background-color: white;">
-  <img src="frontend/public/logowtext.png" alt="TableTrackLogo"/>
-  <img src="https://github.com/user-attachments/assets/05facea7-2acd-4e3e-b57f-9bf70fa7fb23" alt="TableTalkLogo" width="800"/>
+<div align="left" style="background-color: white;">
+  <a href="https://github.com/user-attachments/assets/05facea7-2acd-4e3e-b57f-9bf70fa7fb23">
+    <img src="frontend/public/logowtext.png" alt="TableTalkLogo" width="150"/>
+  </a>
+  ← Video
 </div>
 
 
@@ -135,11 +137,10 @@ TableTalk solves these challenges by providing:
 |--------------------|-----------------------|---------------|
 | **Ahmed Abdulla**   | Team Lead  | [@ahmed-52](https://github.com/ahmed-52) |
 | **Farhan Mashrur**  | Team Lead  | [@farhan-439](https://github.com/farhan-439) |
+| **Sonja Wong**      | Developer  | [@wsonja](https://github.com/wsonja) |
 | **Arsh Singh**      | Developer  | [@Arsh-S](https://github.com/Arsh-S) |
 | **Saesha Agarwal**  | Developer  | [@saeshaagarwal](https://github.com/saeshaagarwal) |
-| **Sonja Wong**      | Developer  | [@wsonja](https://github.com/wsonja) |
 | **Daniel Khanin**   | Developer  | [@Danikk-392](https://github.com/Danikk392) |
-| **Arianna Hsu**     | Developer  |  |
 
 ## **📄 License**
 **All Rights Reserved** - This code is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this software is strictly prohibited without explicit written permission from the authors.
